@@ -1,29 +1,38 @@
-let HTML = prompt("uveď svoji úroveň dovedností v jazkyku HTML v rozsahu 0-100")
-let CSS = prompt("uveď svoji úroveň dovedností v jazyku CSS v rozsahu 0-100")
-let JavaScript = prompt("uveď svoji úroveň dovedností v jazyku JavaScript v rozsahu 0-100")
+let skillHtml = Number(prompt("uveď svoji úroveň dovedností v jazkyku HTML v rozsahu 0-100"))
+let skillCss = Number(prompt("uveď svoji úroveň dovedností v jazyku CSS v rozsahu 0-100"))
+let skillJs = Number(prompt("uveď svoji úroveň dovedností v jazyku JavaScript v rozsahu 0-100"))
 
-const updateSkill = (HTML,CSS,JavaScript) => {
+const updateSkill = (skillHtml,skillCss,skillJs) => {
 
-    if ((HTML >= 0 && HTML <= 100)) {
-        return true
+    if (Html >= 0 && Html <= 100) {
+        updateSkill (skillHtml,skillId)
+        const progressBar = document.querySelector(`#${skillHtml} .skill__progress`);
+        progressBar.style.width = `${value}%`;
     } else {
-        "Neplatná hodnota pro dovednost HTML!"
+        alert ("Neplatná hodnota pro dovednost Html!")
+        
     }
 
 
-    if ((CSS >= 0 && CSS <= 100)) {
-        return true
+    if ((Css >= 0 && Css <= 100)) {
+        updateSkill (skillCss,skillId )
+        const progressBar = document.querySelector(`#${skillCss} .skill__progress`);
+        progressBar.style.width = `${value}%`;
     } else {
-        "Neplatná hodnota pro dovednost CSS!"
+        alert ("Neplatná hodnota pro dovednost CSS!")
+        
     }
 
 
-    if ((JavaScript >= 0 && JavaScript <= 100)) {
-        return true
+    if ((Js >= 0 && Js <= 100)) {
+        updateSkill (skillJs,skillId)
+        const progressBar = document.querySelector(`#${skillJs} .skill__progress`);
+        progressBar.style.width = `${value}%`;
     } else {
-        "Neplatná hodnota pro dovednost JavaScript!"
+        alert ("Neplatná hodnota pro dovednost JavaScript!")
+        
     }
-
 }
-
-updateSkill(HTML,CSS,JavaScript)
+console.log (updateSkill(skillHtml,skill1)) 
+console.log (updateSkill(skillCss,skill2)) 
+console.log (updateSkill(skillJs,skill3))
